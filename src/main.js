@@ -46,7 +46,7 @@
             } else if (attempts++ > 30) {
               reject(new Error('Tauri APIs not available'));
             } else {
-              setTimeout(check, 100);
+              setTimeout(check, 0);
             }
           };
           check();
@@ -258,7 +258,7 @@
       document.body.style.transform = 'translateY(100%)';
       setTimeout(() => {
         document.body.style.display = 'none';
-      }, 300);
+      }, 0);
     }
   }
 
